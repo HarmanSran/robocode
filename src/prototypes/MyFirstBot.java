@@ -17,14 +17,6 @@ public class MyFirstBot extends Robot {
   }
   
   public void onScannedRobot(ScannedRobotEvent e) {
-    
-    stop();
-    int shotsFired = 10;
-    int i = 0;
-    while(i < shotsFired) {
-      fire(1);
-      i += 1;
-    }
-    resume();
+    fire(10);
   }
 }
